@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>RPS</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+<body>
+  <h1> Rock Paper Scissors</h1>
+
+  <section id='score_section'>
+    <h3 class='score_label'>SCORE</h3>
+    <p class="score_block">PLAYER:</p>
+    <p id='p_score'>0</p>
+    <p class='score_block'>COMPUTER:</p>
+    <p id='c_score'>0</p>
+  </section>
+
+  <h3 id='round_result'></h3>
+
+  <section>
+    <div class='choiceBlock' id='rock'><i class="fas fa-hand-rock fa-2x"></i></div>
+    <div class='choiceBlock' id='paper'><i class="fas fa-hand-paper fa-2x"></i></div>
+    <div class='choiceBlock' id='scissors'><i class="fas fa-hand-scissors fa-2x"></i></div>
+  </section>
+  <p id='madeBy'> A game by TrunkMonky</>
+  <section class='start_game'>
+    <h1 class='start_title'>
+      Rock<i class="fas fa-hand-rock"></i>
+      Paper<i class="fas fa-hand-paper"></i>
+      Scissors<i class="fas fa-hand-scissors"></i></h1>
+    <button class='start'>New Game</button>
+    <button class='game_info'>Instructions</button>
+  </section>
+
+  <section class='end_game hidden'>
+    <h1 class='end_title'>You Won!</h1>
+    <button class='restart'>New Game</button>
+  </section>
+
+  <section class='directions hidden'>
+    <h1 class=''>Instructions</h1>
+    <p id='text'>
+      -The game lasts until a player has 5 points.<br>
+      -Make a choice by clicking on a symbol.<br>
+      -your choice will be highlighted in blue.<br>
+      -the computers choice will be highlighted in red.<br>
+      -if there is a tie, the block will be highlighted in green.<br>
+
+    </p>
+    <button class='back'>Back to Menu</button>
+  </section>
+
+  <script src="script.js"></script>
+
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>

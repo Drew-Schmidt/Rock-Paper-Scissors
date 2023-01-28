@@ -1,0 +1,133 @@
+:root {
+  --main-bg-color: linear-gradient(to right, #041926 0%, #052030 38%, #093652 100%);
+  --main-color-family: white;
+  --highlight-color: coral;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--main-bg-color);
+  color: var(--main-color-family);
+}
+
+*{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size: 1.25rem;
+font-weight: 500;
+}
+
+h1{
+  font-size: 2.5rem;
+  color: var(--highlight-color);
+  border-bottom: double .25rem var(--main-color-family);
+}
+
+#round_result{
+  height:2.5rem;
+  font-size: 2rem;
+  font-weight: 800; 
+}
+
+/* Game cards and container */
+section{
+  width: 28rem;
+  height: 8rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content:space-evenly
+}
+
+.choiceBlock, .logoBlock{
+  margin: 0 .5rem 0 .5rem;
+  width: 8rem;
+  height: 7rem;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .1rem;
+  cursor: pointer;
+  background-color: rgba(50,100,150,.95);
+  color: var(--highlight-color);
+  box-shadow: inset -2px 4px 20px 0px rgba(0,0,0,0.69);
+}
+/* SCORING */
+#score_section {
+    width: 22rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.score_block {
+  width: 12rem;
+  font-size: 1rem;
+  color: var(--highlight-color);
+  text-align: right;
+}
+
+#score_label {
+  font-size: 3rem;
+  color: var(--main-color-family);
+  
+}
+
+#text {
+  text-align: center;
+}
+
+#p_score, #c_score {
+  margin-right: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 2rem;
+}
+
+/* Game end screen */
+.end_game, .start_game, .directions{
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-bg-color);
+}
+
+.restart, .game_info, .start {
+  width: 10rem;
+  height: 3rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: .1rem;
+  cursor: pointer;
+  background-color: rgba(50,100,150,.95);
+  color: var(--highlight-color);
+  box-shadow: inset -2px 4px 20px 0px rgba(0,0,0,0.69);
+}
+
+.start:hover, .restart:hover, .game_info:hover{
+  border: solid .1rem var(--highlight-color);
+}
+
+
+.hidden {
+  height: 0;
+  overflow: hidden;
+}
+
+.fas {
+  color: white;
+}
+
+#madeBy {
+  margin-top:3rem;
+  font-size: .45rem;
+}
